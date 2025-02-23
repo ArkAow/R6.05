@@ -20,6 +20,7 @@
     "@hapipal/haute-couture": "4.x.x",
     "@hapipal/schmervice": "^3.0.0",
     "@hapipal/schwifty": "6.x.x",
+    "fast-csv": "^5.0.2",
     "joi": "17.x.x",
     "mysql": "^2.18.1",
     "nodemailer": "^6.10.0",
