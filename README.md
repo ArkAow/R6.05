@@ -10,15 +10,23 @@ Pour récuperer et utiliser le projet, il suffit d'utiliser les commandes suivan
 ```bash
 git clone https://github.com/ArkAow/R6.05.git
 ```
+  
 à la racine du projet cloné :  
 ```bash
 npm i
 ```
-une fois les dépendances installées, lancer le serveur :  
+  
+à la racine du projet, avec docker desktop de lancé :
+```bash
+docker run -d --name hapi-mysql -e MYSQL_ROOT_PASSWORD=hapi -e MYSQL_DATABASE=user mysql:8.0 --default-authentication-plugin=mysql_native_password
+```
+  
+une fois les dépendances et la base de données installées, lancer le serveur :  
 ```bash
 npm start
 ```
-L'application s'ouvre sur le port 3000.  
+  
+L'application s'ouvre sur localhost:3000.  
 Lien vers la documentation de l'API -> [Swagger](http://localhost:3000/documentation#/) (une fois le projet lancé seulement)  
   
 Depuis la page swagger vous pourrez utiliser et tester les routes de l'API.  
