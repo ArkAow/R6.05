@@ -25,6 +25,25 @@ une fois les dépendances et la base de données installées, lancer le serveur 
 ```bash
 npm start
 ```
+
+à la racine du projet, copier le code suivant dans un fichier .env :  
+``` dotenv
+# Port variable
+PORT=3000
+
+# Database variables
+DB_HOST='0.0.0.0',
+DB_USER='root',
+DB_PASSWORD='hapi',
+DB_DATABASE='user',
+DB_PORT=3308
+
+# Email sender variables
+EMAIL_HOST=smtp.ethereal.email
+EMAIL_PORT=587
+EMAIL_USER="ephraim.beatty49@ethereal.email"
+EMAIL_PASS="7nqbfNkWjFC4P5JhvW"
+```
   
 L'application s'ouvre sur localhost:3000.  
 Lien vers la documentation de l'API -> [Swagger](http://localhost:3000/documentation#/) (une fois le projet lancé seulement)  
