@@ -18,7 +18,7 @@ npm i
   
 à la racine du projet, avec docker desktop de lancé :
 ```bash
-docker run -d --name hapi-mysql -e MYSQL_ROOT_PASSWORD=hapi -e MYSQL_DATABASE=user mysql:8.0 --default-authentication-plugin=mysql_native_password
+docker run -d --name hapi-mysql -e MYSQL_ROOT_PASSWORD=hapi -e MYSQL_DATABASE=user -p 3307:3306 mysql:8.0 --default-authentication-plugin=mysql_native_password
 ```
   
 une fois les dépendances et la base de données installées, lancer le serveur :  
@@ -32,11 +32,11 @@ npm start
 PORT=3000
 
 # Database variables
-DB_HOST='0.0.0.0',
+DB_HOST='localhost',
 DB_USER='root',
 DB_PASSWORD='hapi',
 DB_DATABASE='user',
-DB_PORT=3308
+DB_PORT=3307
 
 # Email sender variables
 EMAIL_HOST=smtp.ethereal.email
